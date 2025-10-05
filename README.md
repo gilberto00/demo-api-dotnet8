@@ -32,15 +32,13 @@ GET http://localhost:5041/api/hello
 
 
 **Exemple de réponse :**
-```json
 {
   "message": "Bonjour depuis votre API .NET 8 🚀",
   "date": "2025-10-04T21:00:00"
 }
 
 
-🔹 2. GET /api/math/square/{number}
-
+🔹 2. GET /api/math/square/{number} 
 Calcule le carré d’un nombre transmis dans l’URL.
 
 Exemple de requête :
@@ -49,7 +47,6 @@ GET http://localhost:5041/api/math/square/5
 
 
 Réponse :
-
 {
   "number": 5,
   "result": 25,
@@ -63,7 +60,6 @@ GET http://localhost:5041/api/math/square/-3
 
 
 Réponse :
-
 {
   "error": "Le nombre ne peut pas être négatif."
 }
@@ -86,10 +82,10 @@ cd demo-api-dotnet8
 
 2️⃣ Exécuter l’application
 dotnet run
+
 Une fois lancée, l’API sera accessible à :
 
 http://localhost:5041
-
 
 🧠 Points techniques démontrés
 
@@ -105,7 +101,6 @@ Depuis le terminal :
 
 curl http://localhost:5041/api/math/square/9
 
-
 Sortie :
 
 {
@@ -113,7 +108,6 @@ Sortie :
   "result": 81,
   "message": "Le carré de 9 est 81"
 }
-
 
 🧠 Auteur
 
